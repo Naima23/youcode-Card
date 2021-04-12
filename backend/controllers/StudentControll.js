@@ -12,7 +12,7 @@ const index = (req , res , next) => {
         })
         .catch(error =>{
             res.json({
-                message: "An error Occured !"
+                message: "An error Occured!"
             })
         })
 }
@@ -56,7 +56,7 @@ const  update =(req ,res , next) =>{
     Student.findByIdAndRemove(studentID)
     .then(()=>{
         res.json({
-            message:'student deleted successfully!'
+            message:'student deleted successfully !'
         })
     })
     .catch(error =>{
