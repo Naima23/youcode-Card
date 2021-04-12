@@ -12,7 +12,7 @@ exports.createAdmin = async (req, res )=>{
         })
         // check email
         const EmailExist = await Admin.findOne({email: req.body.email});
-        if(EmailExist) return res.status(400).json({message:"email already exist!"});
+        if(EmailExist) return res.status(400).json({message:"email already exist!?"});
         
         // ***********
         const hashPassword = await bcrypt.hash(admin.password, 10);
