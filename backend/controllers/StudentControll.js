@@ -37,7 +37,7 @@ const  update =(req ,res , next) =>{
     Student.findByIdAndUpdate(studentID, {$set: updateData})
     .then(()=>{
         res.json({
-            message:'Student update successfully!'
+            message:'Student update successfully!!'
         })
     })
     .catch(error => {
